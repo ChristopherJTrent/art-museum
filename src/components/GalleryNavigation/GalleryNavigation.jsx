@@ -6,7 +6,7 @@ const GalleryNavigation = ({galleries}) => {
         <h1>Galleries</h1>
         <NavLink to='/'>Home</NavLink>
         {galleries.map((v, i) => {
-            return <NavLink to={`/galleries/${v.id}`} key={i}>{v.Name}</NavLink>
+            return <NavLink to={`/galleries/${v.id}`} key={i}>{v.name}</NavLink>
         })}
     </nav>
 }
