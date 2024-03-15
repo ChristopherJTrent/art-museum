@@ -1,5 +1,13 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 function App() {
-  return <h1> Hello from App </h1>;
+  const router = createBrowserRouter([
+    {
+      path: '*',
+      element: <h2>Page Not Found</h2>
+    }
+  ])
+  return <RouterProvider router={router} />;
 }
 
 export default App;
